@@ -1,9 +1,9 @@
 from metaflow.plugins.card_modules.card import MetaflowCard
 
 class ScoreCard(MetaflowCard):
-    name='custom_score_card'
+    type='custom_score_card'
 
-    type = 'task'
+    scope = 'task'
     
     def __init__(self,footer=False) -> None:
         self._footer = footer
