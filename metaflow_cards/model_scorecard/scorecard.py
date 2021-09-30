@@ -5,8 +5,8 @@ class ScoreCard(MetaflowCard):
 
     scope = 'task'
     
-    def __init__(self,footer=False) -> None:
-        self._footer = footer
+    def __init__(self,options=dict(footer=False)) -> None:
+        self._footer = options['footer']
     
     def render(self, task):
         mustache = self._get_mustache()
